@@ -30,7 +30,6 @@ async function searchImage (){
     inputData = input.value
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${key}`
 
-    console.log(url);
 
     let response = await fetch(url)
     let data = await response.json()
